@@ -68,10 +68,8 @@ public class DownloadPage {
 					  
 	 				}
 	 			for (int i = 0; i < queue.size(); i++) {   
-	 				//System.out.println(queue.get(i));
 	 				if(queue.get(i)!=null && queue.get(i)!=""){
 		 				Matcher matcher=FunctionUtils.pattern.matcher(queue.get(i));
-		 				//System.out.println(matcher.find());
 		 				Boolean flag=matcher.find();
 		 				if(flag){
 			 				System.out.println("[DownloadPage] url="+queue.get(i));
